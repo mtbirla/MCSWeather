@@ -10,7 +10,7 @@ WORKDIR /src
 # Copy solution and restore as distinct layers
 COPY ["src/MicroSvc.Service/MicroSvcWeather/MicroSvcWeather.csproj", "src/MicroSvcWeather"]
 RUN dotnet restore "src/MicroSvc.Service/MicroSvcWeather/MicroSvcWeather.csproj"
-COPY..
+COPY . .
 WORKDIR /src/src/MicroSvc.Service/MicroSvcWeather
 RUN dotnet build "MicroSvcWeather.csproj" -c Release -o /app/build
 
