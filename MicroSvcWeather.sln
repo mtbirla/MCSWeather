@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36212.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroSvcWeather", "src\MicroSvc.Service\MicroSvcWeather\MicroSvcWeather.csproj", "{3A402595-3018-4448-A336-42A52D20B162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroServiceTest", "src\MicroSvc.Test\MicroServiceTest\MicroServiceTest.csproj", "{7D196299-421F-4CE0-AA0A-CE0BC84BBFDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A402595-3018-4448-A336-42A52D20B162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A402595-3018-4448-A336-42A52D20B162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A402595-3018-4448-A336-42A52D20B162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A402595-3018-4448-A336-42A52D20B162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D196299-421F-4CE0-AA0A-CE0BC84BBFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D196299-421F-4CE0-AA0A-CE0BC84BBFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D196299-421F-4CE0-AA0A-CE0BC84BBFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D196299-421F-4CE0-AA0A-CE0BC84BBFDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4DB782F-406E-424E-8C70-984B74E249BB}
+	EndGlobalSection
+EndGlobal
