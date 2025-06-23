@@ -8,7 +8,7 @@ FROM mcr.microsoft.com/dotnet/sdk:$Version AS build
 WORKDIR /src
 
 # Copy solution and restore as distinct layers
-COPY ["src/MicroSvc.Service/MicroSvcWeather/MicroSvcWeather.csproj", "src/MicroSvcWeather"]
+COPY ["src/MicroSvc.Service/MicroSvcWeather/MicroSvcWeather.csproj", "src/MicroSvc.Service/"]
 RUN dotnet restore "src/MicroSvc.Service/MicroSvcWeather/MicroSvcWeather.csproj"
 COPY . .
 WORKDIR /src/src/MicroSvc.Service/MicroSvcWeather
