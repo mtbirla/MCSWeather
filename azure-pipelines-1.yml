@@ -30,7 +30,7 @@ stages:
   jobs:
   - job: BuildAspNetCore
     displayName: BuildAspNetCore
-    pool: $(vmDotnetImgName)
+    pool: $(vmImageName)
     steps:
       - task: NuGetToolInstaller@1
       - task: NuGetCommand@2
