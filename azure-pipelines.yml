@@ -32,18 +32,3 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-- task: DockerCompose@1
-  inputs:
-    containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'Pay-As-You-Go(dcf7491b-e7b9-40c2-bbd1-51ac080d654f)'
-    azureContainerRegistry: '{"loginServer":"mcstest-b3ftbyb9hwevgfbr.azurecr.io", "id" : "/subscriptions/dcf7491b-e7b9-40c2-bbd1-51ac080d654f/resourceGroups/rg-mitul/providers/Microsoft.ContainerRegistry/registries/MCSTest"}'
-    dockerComposeFile: '**/docker-compose.yml'
-    action: 'Build services'
-- task: DockerCompose@1
-  inputs:
-    containerregistrytype: 'Azure Container Registry'
-    azureSubscription: 'Pay-As-You-Go(dcf7491b-e7b9-40c2-bbd1-51ac080d654f)'
-    azureContainerRegistry: '{"loginServer":"mcstest-b3ftbyb9hwevgfbr.azurecr.io", "id" : "/subscriptions/dcf7491b-e7b9-40c2-bbd1-51ac080d654f/resourceGroups/rg-mitul/providers/Microsoft.ContainerRegistry/registries/MCSTest"}'
-    dockerComposeFile: '**/docker-compose.yml'
-    action: 'Push services'
-    includeLatestTag: true
